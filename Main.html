@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunnydale School</title>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+     h1 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      color: #1E90FF;
+    }
+    h2{
+      font-size: 30px;
+      margin-top: 20px;
+      color: #1565b4;
+    }
+    a{
+        color: #fe5d00;
+    }
+    section {
+      margin: 70px 10%;
+      justify-content: center;
+      border-bottom: 1px solid #7e7e7e;
+    }
+    /* navigation!!!!! */
+    nav {
+      position: sticky;
+      top: 0;
+      padding: 10px 5%;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.493);
+      border-bottom: 1px solid #FF6F1E;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 50px;
+    }
+    nav #contact-us{
+      border-radius: 5px;
+      background-color:#FF6F1E;
+      list-style: none;
+      margin: 0;
+      padding: 15px;
+      display: flex;
+      gap: 50px;
+    }
+    nav #contact-us ul{
+      padding: 0;
+      margin: 0;
+      color: white;
+      font-weight: bold;
+      justify-content: flex-end;
+    }
+    button{
+        border: none;
+        font-weight: bold;
+        color: white;
+    }
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+    }
+    nav a:hover {
+      color: #1E90FF;
+    }
+
+    /* opening!!!*/
+    #opening{
+        background: linear-gradient(to top right, #1E90FF, #1564B2, #459fd6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        height: 300px;
+        border-top: 5px solid #ff8a47;
+    }
+    #opening h1{
+        font-size: 46px;
+        color: white;
+        margin-bottom: 5px;
+    }
+    #opening p{
+        font-size: 20px;
+        color: rgb(247, 247, 247);
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    /*mission!!!! */
+    .cmission{
+        padding: 10px;
+    }
+    #mission{
+        text-align: center;
+        margin: 30px auto;
+        height: auto;
+        max-width: 800px;
+        border-bottom: solid 2px #32CD32;
+       
+    }
+    #mission h2{
+        padding-top: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    #mission p{
+        color: rgb(68, 68, 68);
+        font-size: 20px;
+        margin: 0 auto;
+        line-height: 1.5;
+        max-width: 600px;
+    }
+    /* events!!! */
+    .column{
+      padding: 10px;
+    }
+    #events{
+        border-bottom: solid 2px #ff8a47;
+    }
+     h2#upcoming-events {
+      font-weight: 700;
+      background-color: #ffffe0cc;
+      border-radius: 10px;
+      border-bottom: 2px solid #1E90FF;
+      padding: 5px;
+      display: inline-block;
+    }
+    .events li {
+      display: flex;
+      justify-content: space-around;
+      padding: 5px;
+      border-left: 5px solid #1564B2;
+
+    }
+    .events .indoor {
+      background-color: #ffffe0cc;
+      border-bottom: 2px solid #1564B2;
+    }
+    .events .outdoor {
+      background-color: #afeeeec7;
+      border-bottom: 1px solid #1564B2;
+      padding: 5px;
+    }
+
+    /* contact section! sir*/
+     .section{
+        padding: 15px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #1564B2;
+        border-left: #1564B2 solid 2px;
+        background-color: #f8f3f3;
+        border-radius: 20px;
+    }
+    .section h2{
+        font-weight:600;
+    }
+    footer {
+      color: white;
+      font-size: small;
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid #ccc;
+      background: linear-gradient(to bottom, #1565b4, #1564B2);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <section id="opening">
+    <h1>A Culture of Excellence and Discipline</h1>
+    <p>"Self-belief and Hardwork will always earn you success"</p>
+  </section>
+
+   <nav>
+     <h1>Sunnydale School</h1>
+     <ul>
+        <li><a href="#opening">Home</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#upcoming-events">Events</a></li>
+     </ul>
+    <a href="#number"><button id="contact-us">Contact Us</button></a>
+   </nav>
+
+  <div class="cmission">
+   <section id="mission">
+      <h2>Mission Statement</h2>
+      <p>Sunnydale School is one of the best schools in Cavite, offering accessible, quality, and future-ready education. We aim to develop well-rounded students who are intellectually curious, creative problem solvers, critical thinkers, responsible digital citizens, professionals, and contributing members of society.</p>
+   </section>
+  </div>
+
+  <section id="events">
+    <div class="column">
+       <h2 id="upcoming-events">Upcoming Events</h2>
+      <ul class="events">
+         <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">
+           Art Exhibition - <span style="font-weight: bold; color: red;">June 10</span>
+         </li>
+         <li class="indoor" data-event-type="indoor" title="Event Type: Indoor">
+           Science Fair - <span style="font-weight: bold; color: red;">June 19</span>
+         </li>
+         <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">
+           Sports Day - <span style="font-weight: bold; color: red;">June 20</span>
+         </li>
+      </ul>
+    </div>
+  </section>
+
+    <section id="number">
+      <div class="section">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:sunnydaleschool@gmail.com" title="Click to copy email">sunnydaleschool@gmail.com</a></p>
+        <p>Phone: <a href="tel:+09481361494" title="Click to copy contact number">0-994-742-0066</a></p>
+      </div>
+    </section>
+    <!--Imagine Clicking here shows a message: Thanks for reaching out!-->
+
+  <footer>
+    &copy; Copyright 2025, Sunnydale School. All rights reserved. | Powered by Aguilar Jr., Eddie P.
+  </footer>
+</body>
+</html>
