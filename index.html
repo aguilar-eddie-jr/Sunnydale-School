@@ -12,11 +12,16 @@
       margin: 0;
       padding: 0;
     }
+    header {
+      color: white;
+    }
      h1 {
       font-family: Arial, sans-serif;
       font-size: 24px;
+      margin: 5px;
       font-weight: bold;
-      color: #1E90FF;
+      text-align: center;
+      color: #1565b4;
     }
     h2{
       font-size: 30px;
@@ -27,20 +32,16 @@
         color: #fe5d00;
     }
     section {
-      margin: 70px 10%;
+      margin: 50px 10%;
       justify-content: center;
       border-bottom: 1px solid #7e7e7e;
     }
     /* navigation!!!! */
     nav {
-      position: sticky;
-      top: 0;
-      padding: 2px 5%;
-      height: 50px;
-      background-color: rgba(255, 255, 255, 0.493);
+      padding: 5px 5%;
       border-bottom: 1px solid #FF6F1E;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
     }
     nav ul {
@@ -48,57 +49,38 @@
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-      gap: 20px;
-    }
-    nav #contact-us{
-      border-radius: 5px;
-      background-color:#FF6F1E;
-      list-style: none;
-      padding: 15px 5px;
-      margin: 0;
-      display: flex;
-    }
-    nav #contact-us ul{
-      color: white;
-      font-weight: bold;
-      justify-content: flex-end;
-    }
-    button{
-        border: none;
-        font-weight: bold;
-        color: white;
+      gap: 30px;
     }
     nav a {
       text-decoration: none;
       font-weight: bold;
       color: rgb(0, 0, 0);
     }
+    #contactus{
+        color: white;
+        font-weight: bold;
+        background-color: #FF6F1E;
+        border-radius: 5px;
+        margin-left: 40px;
+        padding: 7px 10px;
+    }
     nav a:hover {
       color: #1E90FF;
     }
-    @media (max-width: 600px) {
-      nav h1, a, ul{
-        font-size: 15px;
-        padding: 0px;
-      }
-    }
     /* opening!!!*/
     #opening{
-        background: linear-gradient(to top right, #1E90FF, #1564B2, #459fd6);
+        background: linear-gradient(to top left, #1E90FF, #1564B2, #3583b4);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        height: 300px;
-        border-right: 5px solid #ff8a47;
-        border-left: 5px solid #ff8a47;
+        height: 250px;
     }
     #opening h2{
-        font-size: 46px;
+        font-size: 40px;
         color: white;
+        margin-top: 0;
         margin-bottom: 5px;
         text-align: center;
     }
@@ -119,7 +101,6 @@
         height: auto;
         max-width: 800px;
         border-bottom: solid 2px #32CD32;
-       
     }
     #mission h2{
         padding-top: 10px;
@@ -189,19 +170,24 @@
   </style>
 </head>
 <body>
+  <header>
+    <h1>Sunnydale School of Cavite</h1>
+  </header>
+
+  <main>
   <section id="opening">
     <h2>Excellence Through Discipline and Dedication</h2>
     <p>"Self-belief and Hardwork will always earn you success"</p>
   </section>
+  </main>
 
    <nav>
-     <h1>Sunnydale School</h1>
       <ul>
         <li><a href="#opening">Home</a></li>
         <li><a href="#mission">Mission</a></li>
         <li><a href="#upcoming-events">Events</a></li>
+        <li><a href="number" id="contactus">Contact Us</a></li>
      </ul>
-    <a href="#number"><button id="contact-us">Contact Us</button></a>
    </nav>
 
   <div class="cmission">
@@ -238,7 +224,7 @@
     <!--Imagine Clicking here shows a message: Thanks for reaching out!-->
 
   <footer>
-    &copy; Copyright 2025, Sunnydale School. All rights reserved. | Powered by Aguilar Jr., Eddie P.
+    &copy; Copyright 2025, Sunnydale School of Cavite. All rights reserved. | Powered by Aguilar Jr., Eddie P.
   </footer>
 </body>
 </html>
