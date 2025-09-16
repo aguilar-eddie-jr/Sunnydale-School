@@ -36,40 +36,12 @@
       justify-content: center;
       border-bottom: 1px solid #7e7e7e;
     }
-    /* navigation!!!! */
-    nav {
-      padding: 5px 5%;
-      border-bottom: 1px solid #FF6F1E;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 20px;
-    }
-    nav a {
-      text-decoration: none;
-      font-weight: bold;
-      color: rgb(0, 0, 0);
-    }
-    #contactus{
-        color: white;
-        font-weight: bold;
-        background-color: #FF6F1E;
-        border-radius: 5px;
-        margin-left: 30px;
-        padding: 7px 7px;
-    }
-    nav a:hover {
-      color: #1E90FF;
-    }
+  
     /* opening!!!*/
     #opening{
         background: linear-gradient(to top left, #1E90FF, #1564B2, #3583b4);
+        border-top: #fe5d00 solid 2px;
+        border-bottom: #1565b4 solid 2px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -123,7 +95,6 @@
     }
      h2#upcoming-events {
       font-weight: 700;
-      background-color: #ffffe0cc;
       border-radius: 10px;
       border-bottom: 2px solid #1E90FF;
       padding: 5px;
@@ -148,23 +119,24 @@
 
     /* contact section! sir*/
      .section{
+      margin: 20px auto;
         padding: 15px;
         margin-bottom: 20px;
         border-bottom: 2px solid #1564B2;
         border-left: #1564B2 solid 2px;
         background-color: #f8f3f3;
         border-radius: 20px;
+        max-width: 500px;
     }
     .section h2{
         font-weight:600;
     }
     footer {
-      color: white;
+      color: rgb(0, 0, 0);
       font-size: small;
       text-align: center;
       padding: 15px;
-      border-top: 1px solid #ccc;
-      background: linear-gradient(to bottom, #1565b4, #1564B2);
+      border-top: 0.5px solid #696969;
       margin-top: 20px;
     }
   </style>
@@ -180,15 +152,6 @@
     <p>"Self-belief and Hardwork will always earn you success"</p>
   </section>
   </main>
-
-   <nav>
-      <ul>
-        <li><a href="#opening">Home</a></li>
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#upcoming-events">Events</a></li>
-        <li><a href="number" id="contactus">Contact Us</a></li>
-     </ul>
-   </nav>
 
   <div class="cmission">
     <section id="mission">
